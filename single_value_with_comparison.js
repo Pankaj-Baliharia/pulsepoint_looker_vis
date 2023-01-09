@@ -187,9 +187,9 @@ create: function(element, config){
       /* Vertical centering */
       //height: 100%;
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row;
       justify-content: center;
-      text-align: left;
+      text-align: center;
       font-family: 'Google Sans';font-size: 22px;
     }
     .main-value-text-large {
@@ -248,7 +248,9 @@ for (let j = 0; j < 3; j++) {
     this.main_value_bottom = td.appendChild(document.createElement("main_bottom"));
   }
   if (j === 1 && i === 4) {
+    this.comp_value_both = td
     this.comp_value_center = td.appendChild(document.createElement("comp_center"));
+    this.comp_value_center_right = td.appendChild(document.createElement("comp_center_right"));
   }
   if (j === 0 && i === 4) {
     this.comp_value_left = td.appendChild(document.createElement("comp_left"));
